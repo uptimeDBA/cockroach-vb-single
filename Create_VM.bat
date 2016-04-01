@@ -63,13 +63,12 @@ REM  Enable bi-directional cutting and pasting between the host and guest.
 VboxManage modifyvm "CockroachDB" --clipboard bidirectional
 
 
-REM  Adjust the VirtualBox timesync parameters to keep better time synchronization
-REM  between the host and the cluster node.
+REM  Clustered machines are sensitive to changes in time. VirtualBox tries to keep the guest's time in synchronization
+REM  with the host by making small adjustments which can cause timing errors in CockroachDB.
+REM  This cluster is on one virtual machine so it's more important the time be consistent more than accurate.
+REM  Disable the time synchronization between guest and host.
 
-VboxManage guestproperty set "CockroachDB" "/VirtualBox/GuestAdd/VBoxService/--timesync-min-adjust" 50
-VboxManage guestproperty set "CockroachDB" "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold" 1000
-VboxManage guestproperty set "CockroachDB" "/VirtualBox/GuestAdd/VBoxService/--timesync-set-start"
-VboxManage guestproperty set "CockroachDB" "/VirtualBox/GuestAdd/VBoxService/--timesync-set-on-restore" 1
+VBoxManage setextradata "CockroachDB" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
 
 
 REM  Start the machine
