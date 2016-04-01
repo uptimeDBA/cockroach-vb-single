@@ -33,8 +33,8 @@ rename %MACHINE_FOLDER%"\CockroachDB\Linux Lite *.vdi" CockroachDB_disk1.vdi
 
 REM Configure the amount of memory and video memory for the VM (in Mb)
 
-VboxManage modifyvm "CockroachDB" --memory 4096 --vram 128
-VboxManage modifyvm "CockroachDB" --cpus 4
+VboxManage modifyvm "CockroachDB" --memory 2048 --vram 128
+VboxManage modifyvm "CockroachDB" --cpus 2
 
 
 REM  Add a SATA controller and attach the disk.
