@@ -5,12 +5,13 @@ REM
 setlocal
 set PATH=%PATH%;"C:\Program Files\Oracle\VirtualBox";"C:\Program Files\7-Zip"
 
-REM The default Machine Folder is "C:\Users\<username>\VirtualBox VMs" on Windows.
+REM The default VirtualBox Machine Folder is "%HOMEDRIVE%%HOMEPATH%\VirtualBox VMs" on Windows which is usually something like
+REM "C:\Users\<username>\VirtualBox VMs".
 REM This is where the machine definition files, disk files, and snapshot folder will be placed.
 REM Change the value of the MACHINE_FOLDER variable below if you have changed the location of your VirtualBox 
 REM default Machine Folder.
 
-set MACHINE_FOLDER="F:\VirtualBox VMs"
+set MACHINE_FOLDER=%HOMEDRIVE%%HOMEPATH%\VirtualBox VMs
 
 REM  CockroachDB Virtual Machine
 
