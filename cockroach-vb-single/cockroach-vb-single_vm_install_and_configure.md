@@ -1,7 +1,7 @@
 ---
 title: Configure and Start the Virtual Machine
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Download the pre-built disk image, adjust the size of the virtual machine to fit your host then execute the script to create the VirtualBox machine."
 ---

@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Downloading a Linux ISO file and building machine from scratch can take a while and be prone to errors so we will be using a pre-built VirtualBox disk image containing an installed version of a Linux distribution to save time."
 ---

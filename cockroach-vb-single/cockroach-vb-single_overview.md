@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "A high level description of what you are building and how you are building it."
 ---

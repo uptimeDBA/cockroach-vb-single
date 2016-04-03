@@ -1,7 +1,7 @@
 ---
 title: Database Cluster Overview
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Running all 3 nodes on the same machine means we have to adjust some of the default port values so the database instances don't conflict."
 ---

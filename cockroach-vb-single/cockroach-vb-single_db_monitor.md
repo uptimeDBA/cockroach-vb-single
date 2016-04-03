@@ -1,7 +1,7 @@
 ---
 title: Monitor the Database
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Use the browser-based interface to monitor the cluster."
 ---

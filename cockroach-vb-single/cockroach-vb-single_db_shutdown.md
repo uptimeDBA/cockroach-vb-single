@@ -1,7 +1,7 @@
 ---
 title: Shutdown the Database
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Here's what to do when you want to shutdown a database node."
 ---

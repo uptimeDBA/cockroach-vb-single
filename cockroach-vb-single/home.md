@@ -2,6 +2,7 @@
 title: Home Page
 tags: 
 audience: dba
+keywords: CockroachDB, install, guide
 type: first_page
 homepage: true
 ---

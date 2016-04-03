@@ -1,7 +1,7 @@
 ---
 title: Preface
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "All the little things you need to know before you get going."
 ---

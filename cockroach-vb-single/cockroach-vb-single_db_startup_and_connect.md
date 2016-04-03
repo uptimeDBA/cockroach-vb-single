@@ -1,7 +1,7 @@
 ---
 title: CockroachDB Instance Startup and Connect
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "How to startup and connect to a CockroachDB cluster."
 ---

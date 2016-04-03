@@ -1,7 +1,7 @@
 ---
 title: 7zip
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "The software to be downloaded requires uncompressing. Windows doesn't come with the software to do this so we install 7zip. Mac and Linux host machine users can skip this step as you should have software to do this."
 ---

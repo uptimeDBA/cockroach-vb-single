@@ -1,7 +1,7 @@
 ---
 title: Install the CockroachDB Software
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Download and install the CockroachDB software. Install the man pages for easy reference."
 ---

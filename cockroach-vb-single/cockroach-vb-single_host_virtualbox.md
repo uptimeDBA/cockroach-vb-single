@@ -1,7 +1,7 @@
 ---
 title: VirtualBox
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Install and configure VirtualBox on your host machine."
 ---

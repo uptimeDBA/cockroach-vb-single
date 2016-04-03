@@ -1,7 +1,7 @@
 ---
 title: Uninstall
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Here's what to do when you have finished using the cluster and want to remove everything set up in this guide."
 ---

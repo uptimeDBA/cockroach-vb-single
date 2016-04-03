@@ -1,7 +1,7 @@
 ---
 title: Host Machine
 tags: 
-keywords: 
+keywords: CockroachDB, install, guide
 last_updated: 
 summary: "These are the things you need to setup and check on your host machine first."
 ---
