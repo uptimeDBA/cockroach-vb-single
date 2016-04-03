@@ -24,4 +24,4 @@ There's no special reason we are using Linux Lite as our operating system. It wa
 
 ## What's Next
 
-[Configure and Start](/cockroach-vb-single/cockroach-vb-single_vm_install_and_configure) the virtual machine.
+[Configure and Start](cockroach-vb-single_vm_install_and_configure) the virtual machine.
