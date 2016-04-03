@@ -37,5 +37,5 @@ The detailed requirements are in the guide but in summary you will need:
 
 ## What's Next?
 
-The [Preface](/cockroach-vb-single/cockroach-vb-single_preface) section of the Introduction will take you through all the little things you need to get going. 
+The [Preface](cockroach-vb-single_preface) section of the Introduction will take you through all the little things you need to get going. 
 
