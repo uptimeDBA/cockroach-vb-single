@@ -44,5 +44,5 @@ Click `Finish` to exit the Setup Wizard.
 
 ## What's Next
 
-The [VirtualBox](/cockroach-vb-single/cockroach-vb-single_host_virtualbox) section shows you how to install this software.
+The [VirtualBox](cockroach-vb-single_host_virtualbox) section shows you how to install this software.
 
