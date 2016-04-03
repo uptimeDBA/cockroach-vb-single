@@ -29,6 +29,6 @@ This quick start guide uses [Linux Lite](https://www.linuxliteos.com/) in a pre-
 
 ## What's Next
 
-The [Host Machine](/cockroach-vb-single/cockroach-vb-single_host_overview) overview will tell you what you need on your host machine.
+The [Host Machine](cockroach-vb-single_host_overview) overview will tell you what you need on your host machine.
 
 
