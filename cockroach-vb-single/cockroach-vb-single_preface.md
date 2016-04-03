@@ -8,14 +8,14 @@ summary: "All the little things you need to know before you get going."
 
 ## Audience
 
-This guide is intended for people wishing to quickly setup their own CockroachDB cluster to evaluate it’s functionality and learn how it works. It's aimed at Architects, Database Administrators, DevOps, etc and assumes a proficient level of computing skills but previous experience with VirtualBox is not required.
+This guide is intended for people wishing to quickly setup their own CockroachDB cluster to evaluate it's functionality and learn how it works. It's aimed at Architects, Database Administrators, DevOps, etc and assumes a proficient level of computing skills but previous experience with VirtualBox is not required.
 
 {{site.data.alerts.important}}
 It is not a guide for setting up a development environment for hacking the code or for running performance tests. Should you wish to contribute to the Cockroach open source project, take a look at the Contribute to CockroachDB page on the CockroachLabs website.
 {{site.data.alerts.end}}
 
 {{site.data.alerts.warning}}
-This guide is based on an Beta release version of CockroachDB. The CockroachDB community is working hard to make it the best distrubuted SQL database there is and things are changing fast so this guide may not exactly reflect the current state of the software. If you encounter errors or differences, please leave a comment so I can improve the guide.
+This guide is based on an Beta release version of CockroachDB. The CockroachDB community is working hard to make it the best distributed SQL database there is and things are changing fast so this guide may not exactly reflect the current state of the software. If you encounter errors or differences, please leave a comment so I can improve the guide.
 {{site.data.alerts.end}}
 
 
