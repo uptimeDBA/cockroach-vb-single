@@ -14,6 +14,7 @@ footer_image_location:
 github_editme_path:
 disqus_shortname: cockroach-vb-single
 baseurl: "/cockroach-vb-single"
+google_analytics: "UA-75179410-2"
 # variables
 
 
