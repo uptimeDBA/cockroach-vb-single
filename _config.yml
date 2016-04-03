@@ -30,8 +30,7 @@ exclude:
   - doc/mydoc_writers*
   - mydoc/
 
-#host: 127.0.0.1
-host: 192.168.0.166
+host: 127.0.0.1
 feedback_email: blog@uptime.co.nz
 
 highlighter: rouge
