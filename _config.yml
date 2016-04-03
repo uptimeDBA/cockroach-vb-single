@@ -1,0 +1,67 @@
+# project definitions
+project: cockroach-vb-single_student
+audience: student
+product: CockroachDB
+platform: all
+version: all
+output: web
+topnav_title: CockroachDB Cluster on a VirtualBox VM
+homepage_title: CockroachDB Cluster on a VirtualBox VM
+site_title: uptimeDBA
+project_folder: cockroach-vb-single
+company_name: Paul Steffensen (@uptimeDBA)
+footer_image_location: 
+github_editme_path:
+disqus_shortname: cockroach-vb-single
+# variables
+
+
+sidebar_tagline: Guide
+sidebar_version: Beta Release
+theme_file: theme-blue.css
+pdf_file_name: cockroach-vb-single.pdf
+
+port: 4010
+
+exclude:
+  - _site
+  - _drafts
+  - configs/
+  - doc/mydoc_writers*
+  - mydoc/
+
+#host: 127.0.0.1
+host: 192.168.0.166
+feedback_email: blog@uptime.co.nz
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+
