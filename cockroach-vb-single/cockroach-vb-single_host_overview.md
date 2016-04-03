@@ -75,4 +75,4 @@ There's a couple of files used by Github that are also included in the zip file,
 
 ## What's Next
 
-The [7zip](/cockroach-vb-single/cockroach-vb-single_host_7zip) section shows you how to install this software utility.
+The [7zip](cockroach-vb-single_host_7zip) section shows you how to install this software utility.
