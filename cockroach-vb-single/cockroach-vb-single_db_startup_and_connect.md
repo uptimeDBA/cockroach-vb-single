@@ -15,7 +15,7 @@ Commands are executed from the `$HOME` directory of the `osboxes` user on the vi
 
 ### First Database Instance
 
-On the virtual machine, as the `osboxes` user, execute the `cockroach start --store=cockroach-data1 --port=26257 --http-port=8080 &` command to statr the first CockroachDB node.
+On the virtual machine, as the `osboxes` user, execute the `cockroach start --store=cockroach-data1 --port=26257 --http-port=8080 &` command to start the first CockroachDB node.
 
 
 ```Shell
