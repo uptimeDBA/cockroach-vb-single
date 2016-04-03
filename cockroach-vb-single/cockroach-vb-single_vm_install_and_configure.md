@@ -124,4 +124,4 @@ Now that you have a working virtual machine you may want to re-open this guide i
 
 ## What's Next
 
-Download and install the CockroachDB software and start the [Database Cluster](/cockroach-vb-single/cockroach-vb-single_db_overview).
+Download and install the CockroachDB software and start the [Database Cluster](cockroach-vb-single_db_overview).
