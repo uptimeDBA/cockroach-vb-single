@@ -115,7 +115,7 @@ Press any key to continue . . .
 
 The virtual machine will start in full GUI mode using the Xfce window manager. Login using the pre-installed user `osboxes` whose password is `osboxes.org`. It has `sudo` configured to enable it to execute any super-user (root) commands as required. This is the account we will install CockroachDB into.
 
-The first time you log on you will be presented with a "Welcome to Linux Lite" window which lets you do things like install updates etc. Just de-select the "Show this dialog on startup." checkbox and click Close. You should be able to maximise the window the virtual machine is running in so it will be full screen.
+The first time you log on you will be presented with a "Welcome to Linux Lite" window which lets you do things like install updates etc. Just de-select the "Show this dialog on startup." checkbox and click Close. You should be able to maximize the window the virtual machine is running in so it will be full screen.
 
 {{site.data.alerts.tip}}
 Now that you have a working virtual machine you may want to re-open this guide in the machine's browser (FireFox comes pre-installed). It will make copying and pasting commands much easier.
