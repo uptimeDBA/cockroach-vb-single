@@ -13,6 +13,7 @@ company_name: Paul Steffensen (@uptimeDBA)
 footer_image_location: 
 github_editme_path:
 disqus_shortname: cockroach-vb-single
+baseurl: "/cockroach-vb-single"
 # variables
 
 
