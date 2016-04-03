@@ -87,5 +87,5 @@ See the SEE ALSO section in this man page for other available commands.
 
 ## What's Next
 
-Let's [Startup and Connect](/cockroach-vb-single/cockroach-vb-single_db_startup_and_connect) to the database.
+Let's [Startup and Connect](cockroach-vb-single_db_startup_and_connect) to the database.
 
