@@ -36,4 +36,4 @@ While the guest machine can access the Internet using NAT via the host's network
 
 ## What's Next
 
-The [Virtual Machine](/cockroach-vb-single/cockroach-vb-single_vm_overview) chapter shows you how to configure and create the virtual machine.
+The [Virtual Machine](cockroach-vb-single_vm_overview) chapter shows you how to configure and create the virtual machine.
