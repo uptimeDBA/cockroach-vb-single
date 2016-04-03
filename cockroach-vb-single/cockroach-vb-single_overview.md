@@ -3,7 +3,7 @@ title: Overview
 tags: 
 keywords: 
 last_updated: 
-summary: "A high level description of what you are building and how you are buiding it."
+summary: "A high level description of what you are building and how you are building it."
 ---
 
 ## Logical Architecture
