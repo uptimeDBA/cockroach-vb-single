@@ -58,5 +58,5 @@ It was written using a Windows 10 host machine but the instructions should easil
 
 ## What's Next
 
-The [Overview](/cockroach-vb-single/cockroach-vb-single_overview) section will give you a high level description of what you are building and how you will build it.
+The [Overview](cockroach-vb-single_overview) section will give you a high level description of what you are building and how you will build it.
 
