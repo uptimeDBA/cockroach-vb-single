@@ -80,4 +80,4 @@ Coming soon.
 
 ## What's Next
 
-Start the Admin GUI interface and [Monitor](/cockroach-vb-single/cockroach-vb-single_db_monitor) the cluster.
+Start the Admin GUI interface and [Monitor](cockroach-vb-single_db_monitor) the cluster.
