@@ -14,7 +14,7 @@ summary: "These are the things you need to setup and check on your host machine 
 You will need a version of Windows, Mac OS X, or Linux that runs [VirtualBox](https://www.virtualbox.org). If you are installing on a Windows host, you will also need [7zip](http://www.7-zip.org/) to uncompress the downloaded files that are part of this guide.
 VirtualBox is supported by various versions of Windows, Linux, and Mac OS X. Please check the version compatibility of these products against your version of your host operating system.
 
-The virtual machine in this guide was constructed on a 64bit Windows 10 Professional host machine with an Intel i7-4770 CPU and 32Gb of memory. Other vesions of Windows and Mac OS X have not been tested yet.
+The virtual machine in this guide was constructed on a 64bit Windows 10 Professional host machine with an Intel i7-4770 CPU and 32Gb of memory. Other versions of Windows and Mac OS X have not been tested yet.
 
 
 ### Memory
@@ -30,7 +30,7 @@ The suggested minimum host machine disk space requirement is **6Gb**. The theore
 
 {{site.data.alerts.important}}
 The VirtualBox machines that get created will reside in the VirtualBox Default Machine Folder. By default this is called "VirtualBox VMs" and on Windows is set to %HOMEDRIVE%%HOMEPATH% which is usually C:\Users\username\. On Mac OS X, it's /Users/username, and on Linux it's /home/username. 
-This is where most of the disk space will be consumed. If you want to change the location of the virtual machine, you can change the Default Machine Folder under File-->Perferences-->General in VirtualBox and the value of the MACHINE_FOLDER variable in the Create_VM script.
+This is where most of the disk space will be consumed. If you want to change the location of the virtual machine, you can change the Default Machine Folder under File-->Preferences-->General in VirtualBox and the value of the MACHINE_FOLDER variable in the Create_VM script.
 {{site.data.alerts.end}}
 
 
@@ -65,7 +65,7 @@ Unzip the file into the this directory. It will create a directory called `cockr
 Rename the `cockroach-vb-single-master` directory to `cockroach-vb-single`.
 
 {{site.data.alerts.tip}}
-The directory name cockroach-vb-single-master is a bit long so I've removed the "-master" and renamed it to "cockraoch-vb-single". That's the name that is refered to throughout the guide so I suggest you rename your directory as well.
+The directory name cockroach-vb-single-master is a bit long so I've removed the "-master" and renamed it to "cockraoch-vb-single". That's the name that is referred to throughout the guide so I suggest you rename your directory as well.
 {{site.data.alerts.end}}
 
 This guide uses `C:\cockroach-vb-single` but any name is ok.
