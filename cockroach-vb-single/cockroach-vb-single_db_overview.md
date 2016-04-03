@@ -15,4 +15,4 @@ In a typical configuration, each cluster node will run on it's own physcial or v
 
 ## What's Next
 
-[Install](/cockroach-vb-single/cockroach-vb-single_db_install) the CockroachDB software.
+[Install](cockroach-vb-single/cockroach-vb-single_db_install) the CockroachDB software.
