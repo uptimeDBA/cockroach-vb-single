@@ -8,8 +8,8 @@ set PATH=%PATH%;"C:\Program Files\Oracle\VirtualBox"
 
 REM  Power off and remove the machine
 
-VboxManage controlvm    "CockroachDB VM" poweroff
-VboxManage unregistervm "CockroachDB VM" --delete
+VboxManage controlvm    "CockroachDB" poweroff
+VboxManage unregistervm "CockroachDB" --delete
 
 
 pause
