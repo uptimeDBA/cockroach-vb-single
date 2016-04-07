@@ -30,15 +30,15 @@ entries:
       type: frontmatter
 
 
-  - title: Introduction
+  - title: Get Started
     audience: student, instructor
     platform: all
     product: CockroachDB
     version: all
     output: web, pdf
     items:
-    - title: Preface
-      url: /cockroach-vb-single/cockroach-vb-single_preface.html
+    - title: Introduction
+      url: /cockroach-vb-single/cockroach-vb-single_introduction.html
       audience: student, instructor
       platform: all
       product: CockroachDB
@@ -68,8 +68,8 @@ entries:
       version: all
       output: web, pdf
 
-    - title: 7zip
-      url: /cockroach-vb-single/cockroach-vb-single_host_7zip.html
+    - title: Uncompress Utility
+      url: /cockroach-vb-single/cockroach-vb-single_host_uncompress.html
       audience: student, instructor
       platform: all
       product: CockroachDB
@@ -131,16 +131,16 @@ entries:
       version: all
       output: web, pdf
       
-    - title: Startup and Connect
-      url: /cockroach-vb-single/cockroach-vb-single_db_startup_and_connect.html
+    - title: Startup and Logging
+      url: /cockroach-vb-single/cockroach-vb-single_db_startup_and_logging.html
       audience: student, instructor
       platform: all
       product: CockroachDB
       version: all
       output: web, pdf 
       
-    - title: Monitor
-      url: /cockroach-vb-single/cockroach-vb-single_db_monitor.html
+    - title: Connect and Monitor
+      url: /cockroach-vb-single/cockroach-vb-single_db_connect_and_monitor.html
       audience: student, instructor
       platform: all
       product: CockroachDB

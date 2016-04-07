@@ -1,20 +1,43 @@
 ---
-title: Monitor the Database
+title: Connect and Monitor the Database
 tags: 
 keywords: CockroachDB, install, guide
 last_updated: 
-summary: "Use the browser-based interface to monitor the cluster."
+summary: "Use the built-in client functionality to connect to the cluster and start the browser-based Admin UI interface to monitor the cluster."
 ---
+
+## Connect to the Database
+
+The `cockroach` executable contains a built-in client that enables you to connect to a cockroachDB cluster and execute SQL statements.
+
+1. On the virtual machine, using a terminal, as the `osboxes` user, logon to the cluster using the `cockroach sql --url postgresql://root@localhost:26257?sslmode=disable` command.
+
+   For example, the  `SHOW DATABASES` command shows all the databases in the cluster.
+
+   ```Shell
+   osboxes@osboxes:~$ cockroach sql --url postgresql://root@localhost:26257?sslmode=disable
+   # Welcome to the cockroach SQL interface.
+   # All statements must be terminated by a semicolon.
+   # To exit: CTRL + D.
+   root@localhost:26257> show databases;
+   +----------+
+   | Database |
+   +----------+
+   | system   |
+   +----------+
+   root@localhost:26257> ^D
+   osboxes@osboxes:~$ 
+   ```
 
 ## Start the Admin GUI
 
 When you start each database instance, it displays the URL of the Admin UI you can connect to to monitor the cluster. 
 
-On the virtual machine, open the FireFox web browser and go to `http://localhost:8080` which is the admin interface of the first cluster node.
+1. On the virtual machine, open the FireFox web browser and go to `http://localhost:8080` which is the admin interface of the first cluster node.
 
-For more information on how to use the Admin UI and what it contains, refer to the [Explore the Admin UI](https://www.cockroachlabs.com/docs/explore-the-admin-ui.html) in the CockroachDB documentation.
+   For more information on how to use the Admin UI and what it contains, refer to the [Explore the Admin UI](https://www.cockroachlabs.com/docs/explore-the-admin-ui.html) in the CockroachDB documentation.
 
-![Monitor](images/Monitor.png)
+   ![Monitor](images/Monitor.png)
 
 
 You can also inspect the cluster status from the command line by executing the `cockroach node status` command.
@@ -32,6 +55,8 @@ osboxes@osboxes:~$
 ```
 
 ## What's Next
+
+That's the end of the Quick Start Guide. You should have a 3 node CockroachDB up and running with which you can explore and experiment with the features and functionality of the database. Enjoy!
 
 Try a few SQL commands like:
 

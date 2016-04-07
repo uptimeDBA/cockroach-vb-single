@@ -1,5 +1,5 @@
 ---
-title: Preface
+title: Introduction
 tags: 
 keywords: CockroachDB, install, guide
 last_updated: 
@@ -25,10 +25,10 @@ The best place is the official [CockroachDB Docs](https://www.cockroachlabs.com/
 
 You can connect to the CockroachDB community in a number of ways:
 
-1. Twitter using @cockroachdb
-2. Facebook at [https://www.facebook.com/cockroachlabs/](https://www.facebook.com/cockroachlabs/)
-3. Google Groups at [https://groups.google.com/forum/#!forum/cockroach-db](https://groups.google.com/forum/#!forum/cockroach-db)
-4. Reddit at [https://www.reddit.com/r/CockroachDB/](https://www.reddit.com/r/CockroachDB/)
+- Twitter using @cockroachdb
+- Facebook at [https://www.facebook.com/cockroachlabs/](https://www.facebook.com/cockroachlabs/)
+- Google Groups at [https://groups.google.com/forum/#!forum/cockroach-db](https://groups.google.com/forum/#!forum/cockroach-db)
+- Reddit at [https://www.reddit.com/r/CockroachDB/](https://www.reddit.com/r/CockroachDB/)
 
 
 ## Conventions
@@ -43,8 +43,9 @@ The following text conventions are used in this guide:
 | `monospace` | Monospace type in a shaded box indicates command output or file listings.
 |---
 
-
 In output listings, the line **<<output snip>>** indicates that some output has been removed for brevity.
+
+A numbered list indicates a series of steps to performed a task.
 
 
 ## Intended Use

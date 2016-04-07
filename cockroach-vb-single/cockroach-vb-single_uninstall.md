@@ -8,7 +8,7 @@ summary: "Here's what to do when you have finished using the cluster and want to
 
 ## Remove the Virtual Machine
 
-Execute the `Remove_VM` script (either `Remove_VM.bat` or `Remove_VM.bash`) in the `C:\cockroach-vb-single` directory. This script will shutdown the virtual machine if it's running, then delete all associated entries and files.
+Execute the `Remove_VM` script (either `Remove_VM.bat` or `Remove_VM.bash`) in the `cockroach-vb-single` directory. This script will shutdown the virtual machine if it's running, then delete all associated entries and files.
 
 
 ## Remove VirtualBox
@@ -23,6 +23,6 @@ To remove 7zip, click the "Windows" icon to open the Start screen. Find the 7zip
 
 ## Remove Directories
 
-Delete the `C:\cockroach-vb-single` directory and all it's contents.
+Delete the `cockroach-vb-single` directory and all it's contents.
 
 

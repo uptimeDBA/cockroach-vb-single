@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Guide Overview
 tags: 
 keywords: CockroachDB, install, guide
 last_updated: 
@@ -8,13 +8,13 @@ summary: "A high level description of what you are building and how you are buil
 
 ## Logical Architecture
 
-For a high-level overview of what you will be building with this guide, the logical architecture of the cluster looks like this:
+For a high-level overview of what you will be building with this guide, the logical architecture of the cluster looks like this. The diagram shows the 3 CockroachDB database instances running inside a single VirtualBox machine on a host machine.
 
-![virtualbox architecture](images/virtualbox_architecture_single.png)
+![Logical Cluster Architecture](images/virtualbox_architecture_single.png)
 
 All 3 CockroachDB instances will be started from a single virtual machine. This configuration is something that you wouldn't use for real implementations but it allows you to get a minimal CockroachDB cluster up and running quickly.
 
-VirtualBox will work on Mac OS/X and Linux so you could use one of those for the host machine instead of Windows. Instructions for a Mac or Linux host are coming soon but it's reasonably easy to work out what to do.
+VirtualBox works on Windows, Mac OS X, and Linux so you could use any one of those for the host machine instead of Windows. Instructions using Windows and Mac are included with Linux coming soon.
 
 If you haven't used VirtualBox before, I would recommend you read [Chapter 1. First
 Steps](https://www.virtualbox.org/manual/ch01.html) in the VirtualBox manual as a brief introduction.

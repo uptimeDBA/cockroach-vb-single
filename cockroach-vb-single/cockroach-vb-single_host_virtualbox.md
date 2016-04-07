@@ -1,37 +1,47 @@
 ---
-title: VirtualBox
+title: Install VirtualBox
 tags: 
 keywords: CockroachDB, install, guide
 last_updated: 
 summary: "Install and configure VirtualBox on your host machine."
 ---
-The logical architecture built using this guide looks like this. The diagram shows the 3 CockroachDB database instances running inside a single VirtualBox machine on a host machine.
 
-![Logical Cluster Architecture](images/virtualbox_architecture_single.png)
+## Windows Hosts
 
-{{site.data.alerts.important}}
-This is not a configuration you would use for anything other than getting a minimal cluster up and running quickly.
-{{site.data.alerts.end}}
+### Download and Install VirtualBox
 
+1. Download the latest `.exe` file from the [VirtualBox Download Page](https://www.virtualbox.org/wiki/Downloads). You don't need the VirtualBox Extension Pack.
 
-## Install VirtualBox
+2. Install VirtualBox onto your host machine. Accept all the default choices during install. This guide was created and tested using version 5.0.14 but should work with newer versions.
 
-1.  Download and install the latest version of [VirtualBox](https://www.virtualbox.org/manual/ch06.html) onto your host machine. Accept all the default choices during install. This guide was created and tested using version 5.0.14 but should work with newer versions.
-
-2.  The VirtualBox Extension Pack that is optionally installed on the host machine is not required for this guide but you can install it if you want to. The VirtualBox Guest Additions that are optionally install on the guest machines are also not required.
-
-## Configure VirtualBox
-
-### Default Machine Folder
-
-VirtualBox doesn't require much configuration for the setup in this guide. You may want to change the default location where VirtualBox creates virtual machines on your host machine.
+There's no additional configuration required. You may want to change the default location where VirtualBox creates virtual machines on your host machine if you don't have enough room. The default on Windows is `C:\Users\<username>\VirtualBox VMs`.
 
 
-## VM Network
+## Mac Hosts
 
-The network interface configured on the virtual machine is of type NAT (Network Address Translation). It allows the machine to use the host machine's networking to access the Internet and requires no additional configuration on the host. See the [Introduction to networking modes](https://www.virtualbox.org/manual/ch06.html#networkingmodes) in the VirtualBox Documentation for more information.
+### Download and Install VirtualBox
 
-While the guest machine can access the Internet using NAT via the host's network, outside machines **including the host** cannot access the guest directly. Access to the guest is done using a terminal on the GUI console when the machine is started.
+1. Download the latest `.dmg` file from the [VirtualBox Download Page](https://www.virtualbox.org/wiki/Downloads). You don't need the VirtualBox Extension Pack.
+
+2. Install VirtualBox onto your host machine. Accept all the default choices during install. This guide was created and tested using version 5.0.14 but should work with newer versions.
+
+There's no additional configuration required. You may want to change the default location where VirtualBox creates virtual machines on your host machine if you don't have enough room. The default on Mac is `/Users/<username>/VirtualBox VMs`.
+
+
+## Linux Hosts
+
+### Download and Install VirtualBox
+
+1. On the [VirtualBox Download Page](https://www.virtualbox.org/wiki/Downloads), click the `VirtualBox <version> for Linux hosts` link and choose the appropiate package file for your Linux distribution. You don't need the VirtualBox Extension Pack. Follow the install instructions.
+
+2. Install the package file as per your Linux distribution instructions.
+
+There's no additional configuration required. You may want to change the default location where VirtualBox creates virtual machines on your host machine if you don't have enough room. The default on Linux is `/home/<username>/VirtualBox VMs`.
+
+
+## VirtualBox Extension Pack 
+
+The VirtualBox Extension Pack that is optionally installed on the host machine is not required for this guide but you can install it if you want to. The VirtualBox Guest Additions that are optionally install on the guest machines are also not required.
 
 
 ## What's Next

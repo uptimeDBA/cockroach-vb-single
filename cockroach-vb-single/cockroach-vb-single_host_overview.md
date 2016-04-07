@@ -11,10 +11,11 @@ summary: "These are the things you need to setup and check on your host machine 
 
 ### Operating System
 
-You will need a version of Windows, Mac OS X, or Linux that runs [VirtualBox](https://www.virtualbox.org). If you are installing on a Windows host, you will also need [7zip](http://www.7-zip.org/) to uncompress the downloaded files that are part of this guide.
-VirtualBox is supported by various versions of Windows, Linux, and Mac OS X. Please check the version compatibility of these products against your version of your host operating system.
+You will need a version of Windows, Mac OS X, or Linux that runs [VirtualBox](https://www.virtualbox.org). 
 
-The virtual machine in this guide was constructed on a 64bit Windows 10 Professional host machine with an Intel i7-4770 CPU and 32Gb of memory. Other versions of Windows and Mac OS X have not been tested yet.
+VirtualBox is supported by various versions of Windows, Linux, and Mac OS X. Please check the version compatibility of these products against the version of your host operating system.
+
+The virtual machine in this guide was constructed on a 64bit Windows 10 Professional host machine with an Intel i7-4770 CPU and 32Gb of memory. It's also been tested on a Mac 10.11.4 "El Capitan". Other versions of Windows and Mac OS X or Linux have not been tested yet.
 
 
 ### Memory
@@ -39,40 +40,43 @@ This is where most of the disk space will be consumed. If you want to change the
 The following software components are required on the host machine. The versions listed are the versions used in this guide.
 Versions greater than those listed should also work.
 
-|--
-| Software | Version
-|:-|:-
-| VirtualBox | 5.0.14
-| 7zip\* | 15.14
-|---
-
-\*If you are using a Linux or Mac host, you don't need 7zip.
+- Version 5.0.14 or greater.
+- Uncompression Software to extract files from a .7z arachive. Depending on host operating system, this will be:
+	- 7-Zip for Windows
+	- The Unarchiver for Mac
+	- 7-zip for Linux
 
 The following pages will instruct you how to install and setup this software.
+
+
+## The cockroach-vb-single Directory
+
+This is the directory that gets created in the next step when you download and extract the configuration files. You can put this directory anywhere you want but the suggested places are the `C:\Users\<username>\Documents` on Windows, the `Documents` folder on Mac, or the `$HOME` dircetory on Linux.
 
 
 ## Download the Configuration Files
 
 A few small configuration files have been created to save you some typing. They can be downloaded in a zip file which when unzipped will create a directory with the files.
 
-Download the files from the guide's github repository. You don't have to have a github account, just go to the [repository](https://github.com/uptimeDBA/cockroach-vb-single) at `https://github.com/uptimeDBA/cockroach-vb-single` and click on the `Download ZIP` button as shown below.
+1. Download the files from the guide's github repository. You don't have to have a github account, just go to the [repository](https://github.com/uptimeDBA/cockroach-vb-single) at `https://github.com/uptimeDBA/cockroach-vb-single` and click on the `Download ZIP` button as shown below.
 
-![Download ZIP file](images/Download_ZIP_file.png)
+   ![Download ZIP file](images/Download_ZIP_file.png)
 
-The zip file will be called `cockroach-vb-single-master.zip`. Save the file into the directory where you want to create the `cockroach-vb-single` directory.
-Unzip the file into the this directory. It will create a directory called `cockroach-vb-single-master` with the required files. 
+   The zip file will be called `cockroach-vb-single-master.zip`. 
+   
+2. Save the file into the directory where you want to create the `cockroach-vb-single` directory. Usually `C:\Users\<username>\Documents` on Windows, the `Documents` folder on Mac, or the `$HOME` dircetory on Linux.
 
-Rename the `cockroach-vb-single-master` directory to `cockroach-vb-single`.
+3. Unzip the file into the this directory. It will create a directory called `cockroach-vb-single-master` with the required files. 
 
-{{site.data.alerts.tip}}
-The directory name cockroach-vb-single-master is a bit long so I've removed the "-master" and renamed it to "cockraoch-vb-single". That's the name that is referred to throughout the guide so I suggest you rename your directory as well.
-{{site.data.alerts.end}}
+4. Rename the `cockroach-vb-single-master` directory to `cockroach-vb-single`.
 
-This guide uses `C:\cockroach-vb-single` but any name is ok.
+   {{site.data.alerts.tip}}
+   The directory name cockroach-vb-single-master is a bit long so I've removed the "-master" and renamed it to "cockroach-vb-single". That's the name that is referred to throughout the guide so I suggest you rename your directory as well.
+   {{site.data.alerts.end}}
 
 There's a couple of files used by Github that are also included in the zip file, files like `LICENSE.md` and `README.md`. They can be deleted or ignored.
 
 
 ## What's Next
 
-The [7zip](cockroach-vb-single_host_7zip) section shows you how to install this software utility.
+The [Uncompress](cockroach-vb-single_host_uncompress) section shows you how to install a software utility to extract files from a .7z archive..

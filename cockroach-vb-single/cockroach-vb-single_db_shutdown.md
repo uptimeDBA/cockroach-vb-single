@@ -22,12 +22,21 @@ server drained and shutdown completed
 osboxes@osboxes:~$ 
 ```
 
+
+
 The Admin UI will still show 3 nodes in the cluster as we have just shut one down, we haven't removed it. The NODES page of the Admin UI will show the node's status.
 
 ![Shutdown Node](images/Shutdown_Node.png)
 
 
 There doesn't seem to be a command to retrieve the http-port of a running node. Neither the `status` or the `ls` options of the `cockroach node` command shows this information. The `ps -ef | grep cockroach` command will show the http-port argument if originally supplied however.
+
+{{site.data.alerts.warning}}
+The Admin UI is served from the same cockroach executable that runs the database node. If you shutdown the database node that your Admin UI is connected to, it will stop working. You will need to reconnect to another operational node.
+{{site.data.alerts.end}}
+
+
+
 
 
 
