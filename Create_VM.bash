@@ -9,7 +9,7 @@
 #  This will usually be "/Users/<username>/VirtualBox VMs" for Mac
 #  or "/home/<username>/VirtualBox VMs" for Linux.
 #
-MACHINE_FOLDER="${HOME}/VirtualBox VMs
+MACHINE_FOLDER="${HOME}/VirtualBox VMs"
 
 
 #  Create the VM
@@ -19,7 +19,7 @@ VboxManage createvm --name "CockroachDB" --ostype "Linux_64" --register
 
 #  Rename the .vdi file
 #
-mv "Linux Lite*.vdi" "${MACHINE_FOLDER}/CockroachDB/CockroachDB_disk1.vdi"
+mv Linux\ Lite*.vdi "${MACHINE_FOLDER}/CockroachDB/CockroachDB_disk1.vdi"
 
 
 #  Configure the amount of memory and video memory for the VM (in Mb)
@@ -60,8 +60,6 @@ VBoxManage setextradata "CockroachDB" "VBoxInternal/Devices/VMMDev/0/Config/GetH
 #Start the machine
 #
 VBoxManage startvm "CockroachDB" --type gui
-
-pause
 
 #
 #### End of Script  ####
