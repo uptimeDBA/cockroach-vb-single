@@ -40,7 +40,11 @@ Use the uncompress utility installed previously to extract the VirtualBox disk i
 
 ### On Mac
 
-1. Use **The Unarchiver** utility to uncompress the disk image into the `cockroach-vb-single` directory under your `Home` folder.
+1. The downloaded .7z file should already be associated with **The Unarchiver** utility. Double-click on the file to extract the disk image. Uncompress the disk image into the `cockroach-vb-single` directory. By default the utility will create a `64bit` directory that contains the extracted disk image. 
+
+![Unarchiver](images/Unarchiver.png)
+
+![Unarchiver extracting](images/Unarchiver_extracting.png)
 
 
 ### On Linux
@@ -128,6 +132,16 @@ The `Create_VM` script will:
 ### On Mac
 
 1. On the host machine, using the **Terminal** application, change directory into `/Users/<username>/cockroach-vb-single` and execute the `Create_VM.bash` script. You may need to change the file's execute permissions to do so.
+
+```Shell
+iMac:cockroach-vb-single uptimeDBA$ ./Create_VM.bash 
+Virtual machine 'CockroachDB' is created and registered.
+UUID: df120c2a-bac3-4dc8-b7e1-dd77087e86ba
+Settings file: '/Users/uptimeDBA/VirtualBox VMs/CockroachDB/CockroachDB.vbox'
+Waiting for VM "CockroachDB" to power on...
+VM "CockroachDB" has been successfully started.
+iMac:cockroach-vb-single uptimeDBA$ 
+```
 
 
 ### On Linux
