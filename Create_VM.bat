@@ -2,7 +2,7 @@
 
 REM Copyright (c) Paul Steffensen, (@uptimeDBA). All rights reserved.
 
-REM Put the 7zip and VirtualBox directories in the PATH so we can find their executables.
+REM Put the VirtualBox directories in the PATH so we can find their executables.
 REM
 setlocal
 set PATH=%PATH%;"C:\Program Files\Oracle\VirtualBox"
