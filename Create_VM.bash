@@ -19,7 +19,7 @@ VboxManage createvm --name "CockroachDB" --ostype "Linux_64" --register
 
 #  Rename the .vdi file
 #
-mv "${MACHINE_FOLDER}/CockroachDB/Linux Lite*.vdi" "${MACHINE_FOLDER}/CockroachDB/CockroachDB_disk1.vdi"
+mv "Linux Lite*.vdi" "${MACHINE_FOLDER}/CockroachDB/CockroachDB_disk1.vdi"
 
 
 #  Configure the amount of memory and video memory for the VM (in Mb)
@@ -62,7 +62,6 @@ VBoxManage setextradata "CockroachDB" "VBoxInternal/Devices/VMMDev/0/Config/GetH
 VBoxManage startvm "CockroachDB" --type gui
 
 pause
-
 
 #
 #### End of Script  ####
