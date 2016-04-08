@@ -8,13 +8,14 @@ summary: "Download the pre-built disk image, adjust the size of the virtual mach
 
 We will then download and install the latest version of the CockroachDB pre-built binary. The steps are:
 
-1.  Download the VirtualBox disk image.
+1.  Download the Pre-Built Image.
 
 2.  Configure the Create_VM script.
 
 3.  Execute the Create_VM script to create the virtual machine.
 
 ## Download the Pre-Built Image
+<span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
 
 1. From the [Linux Lite page on osboxes.org](http://www.osboxes.org/linux-lite/) `http://www.osboxes.org/linux-lite/` select the 64 (or 32) bit VirtualBox image of the latest Linux Lite build.
 ![Download Linux Lite](images/Download_Linux_Lite.png)
@@ -33,12 +34,14 @@ Use the uncompress utility installed previously to extract the VirtualBox disk i
 
 
 ### On Windows
+<span class="label label-info">Windows</span>
 
 1. Use the **7-Zip** utility to uncompress the disk image. Select the `cockroach-vb-single` directory and `No pathnames` to ensure the file is extracted into `cockroach-vb-single`. 
 ![7-Zip extract](images/7zip_extract.png)
 
 
 ### On Mac
+<span class="label label-success">Mac</span>
 
 1. The downloaded .7z file should already be associated with **The Unarchiver** utility. Double-click on the file to extract the disk image. Uncompress the disk image into the `cockroach-vb-single` directory. By default the utility will create a `64bit` directory that contains the extracted disk image. 
 
@@ -48,6 +51,7 @@ Use the uncompress utility installed previously to extract the VirtualBox disk i
 
 
 ### On Linux
+<span class="label label-warning">Linux</span>
 
 1. Use **strong coffee** to uncompress the disk image into the `$HOME/cockroach-vb-single` directory.
 
@@ -56,12 +60,14 @@ Use the uncompress utility installed previously to extract the VirtualBox disk i
 
 The `Create_VM` script that was download as part of the host machine setup contains all the instructions to create your virtual machine. There are a couple of things you may need to edit within the script before it's executed.
 
+If you didn't change the location of the default machine folder when you installed VirtualBox and you are happy with the default memory and CPU configuration of the virtual machine, you can skip straight to the [Execute the Create_VM Script](#Execute-the-Create_VM-Script) section.
+
 {{site.data.alerts.important}}
 The "Create_VM" script you will need is either the "Create_VM.bat" script if you have a Windows host, or "Create_VM.bash" if you have a Mac or Linux host.
 {{site.data.alerts.end}}
 
 {{site.data.alerts.tip}}
-You can quickly open a command prompt in the desired directory by holding down shift key and right-clicking the folder name in the Windows File Manager, then choose "Open command window here".
+On Windows, you can quickly open a command prompt in the desired directory by holding down shift key and right-clicking the folder name in the Windows File Manager, then choose "Open command window here".
 {{site.data.alerts.end}}
 
 
@@ -71,12 +77,13 @@ The location of the default VirtualBox Machine Folder is `%HOMEDRIVE%%HOMEPATH%\
 
 If you changed this location during the installation of VirtualBox, change the value of the `MACHINE_FOLDER` variable in the `Create_VM` script to match.
 
+<span class="label label-info">Windows</span>
 On Windows:
 
 ```Shell
 set MACHINE_FOLDER=%HOMEDRIVE%%HOMEPATH%\VirtualBox VMs
 ```
-
+<span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
 On Mac/Linux:
 
 ```Shell
@@ -85,6 +92,7 @@ MACHINE_FOLDER="${HOME}/VirtualBox VMs
 
 
 ### Memory
+<span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
 
 The default virtual memory is **2Gb**. This should be enough to start 3 CockroachDB nodes but more is preferable. If your host has greater than **6Gb**, it's suggested that you set the memory to the smaller of **4Gb** or half your physical memory.
 
@@ -97,6 +105,7 @@ The default virtual memory is **2Gb**. This should be enough to start 3 Cockroac
    ```
 
 ### CPU's
+<span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
 
 The default number of virtual CPUs in the create script is 2. This should be enough to run 3 CockroachDB nodes but more is preferable. The recommended number is up to half of the number of physical CPUs, including hyper-threading.
 
@@ -109,7 +118,8 @@ The default number of virtual CPUs in the create script is 2. This should be eno
    ```
 
 
-## Execute the Create_VM Script
+## Execute the Create_VM Script {#Execute-the-Create_VM-Script}
+
 
 The `Create_VM` script will:
 
@@ -121,6 +131,7 @@ The `Create_VM` script will:
 
 
 ### On Windows
+<span class="label label-info">Windows</span>
 
 1. On the host machine, using the Windows File Manager, in the `cockroach-vb-single` directory, double-click on the `Create_VM.bat` script file to execute it.
 
@@ -130,11 +141,12 @@ The `Create_VM` script will:
 
 
 ### On Mac
+<span class="label label-success">Mac</span>
 
-1. On the host machine, using the **Terminal** application, change directory into `/Users/<username>/cockroach-vb-single` and execute the `Create_VM.bash` script. You may need to change the file's execute permissions to do so.
+1. On the host machine, using the **Terminal** application, change directory into `cockroach-vb-single` and execute the `Create_VM.bash` script using `. ./Create_VM.bash`. 
 
 ```Shell
-iMac:cockroach-vb-single uptimeDBA$ ./Create_VM.bash 
+iMac:cockroach-vb-single uptimeDBA$ . ./Create_VM.bash 
 Virtual machine 'CockroachDB' is created and registered.
 UUID: df120c2a-bac3-4dc8-b7e1-dd77087e86ba
 Settings file: '/Users/uptimeDBA/VirtualBox VMs/CockroachDB/CockroachDB.vbox'
@@ -145,6 +157,7 @@ iMac:cockroach-vb-single uptimeDBA$
 
 
 ### On Linux
+<span class="label label-warning">Linux</span>
 
 1. Coming soon.
 
