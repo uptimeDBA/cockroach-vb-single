@@ -25,7 +25,7 @@ VboxManage createvm --name "CockroachDB" --ostype "Linux_64" --register
 
 REM  Move the .vdi file into the machine folder and rename to CockroachDB_disk1.vdi
 
-move "Linux Lite *.vdi" "%MACHINE_FOLDER%"\CockroachDB\CockroachDB_disk1.vdi
+move "64bit\Linux Lite *.vdi" "%MACHINE_FOLDER%"\CockroachDB\CockroachDB_disk1.vdi
 
 
 REM Configure the amount of memory and video memory for the VM (in Mb)
