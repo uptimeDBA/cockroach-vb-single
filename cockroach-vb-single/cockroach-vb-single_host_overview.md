@@ -40,7 +40,7 @@ This is where most of the disk space will be consumed. If you want to change the
 The following software components are required on the host machine. The versions listed are the versions used in this guide.
 Versions greater than those listed should also work.
 
-- Version 5.0.14 or greater.
+- VirtualBox version 5.0.14 or greater.
 - Uncompression Software to extract files from a .7z arachive. Depending on host operating system, this will be:
 	- 7-Zip for Windows
 	- The Unarchiver for Mac

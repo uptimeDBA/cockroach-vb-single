@@ -31,4 +31,4 @@ Some components of the virtual machine like the amount of memory and the number 
 
 ## What's Next
 
-[Configure and Start](cockroach-vb-single_vm_install_and_configure) the virtual machine.
+The next step is where most of the action happens. We will [Configure and Start](cockroach-vb-single_vm_install_and_configure) the virtual machine.

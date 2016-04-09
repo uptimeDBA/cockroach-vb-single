@@ -14,6 +14,10 @@ Now that you have a working virtual machine you may want to re-open this guide i
 
 Log into your virtual machine as the `osboxes` user (password is `osboxes.org`).
 
+{{site.data.alerts.important}}
+The pre-built binary version will probably be different to the one used in the instructions below. Adjust the filename accordingly.
+{{site.data.alerts.end}}
+
 1. Open the FireFox web browser on your virtual machine desktop and go to the [Install CockroachDB](https://www.cockroachlabs.com/docs/install-cockroachdb.html) `https://www.cockroachlabs.com/docs/install-cockroachdb.html` page, select **Linux** and **Download the Binary**. Click the **CockroachDB tarball for Linux** link and save the .tgz file into the home directory of the `osboxes` user.
 ![Download CockroachDB](images/Download_CockroachDB.png)
 

@@ -6,13 +6,13 @@ last_updated:
 summary: "Download the pre-built disk image, adjust the size of the virtual machine to fit your host then execute the script to create the VirtualBox machine."
 ---
 
-We will then download and install the latest version of the CockroachDB pre-built binary. The steps are:
+The steps are:
 
-1.  Download the Pre-Built Image.
+- Download the Pre-Built Image.
 
-2.  Configure the Create_VM script.
+- Configure the Create_VM script if required.
 
-3.  Execute the Create_VM script to create the virtual machine.
+- Execute the Create_VM script to create the virtual machine.
 
 ## Download the Pre-Built Image
 <span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
@@ -36,7 +36,8 @@ Use the uncompress utility installed previously to extract the VirtualBox disk i
 ### On Windows
 <span class="label label-info">Windows</span>
 
-1. Use the **7-Zip** utility to uncompress the disk image. Select the `cockroach-vb-single` directory and `No pathnames` to ensure the file is extracted into `cockroach-vb-single`. 
+1. Use the **7-Zip** utility to uncompress the disk image. By default the utility will create a `64bit` directory that contains the extracted disk image. 
+ 
 ![7-Zip extract](images/7zip_extract.png)
 
 
