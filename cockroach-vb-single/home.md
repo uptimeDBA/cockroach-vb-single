@@ -24,6 +24,8 @@ This guide explains how to set up a demonstration/evaluation CockroachDB cluster
 
 It uses a pre-built VirtualBox image as a starting point to create the guest machine.
 
+![Arch](images/new_vb_arch_single_50pc.png)
+
 You need to be connected to the Internet to build this machine as it requires you to download and install some things but you don't need to be online to run the CockroachDB cluster.
 
 
@@ -38,5 +40,5 @@ The detailed requirements are in the guide but in summary you will need:
 
 ## What's Next?
 
-The [Introduction](cockroach-vb-single_introduction) section of the Introduction will take you through all the little things you need to get going. 
+The [Introduction](cockroach-vb-single_introduction) section will take you through all the little things you need to get going. 
 
