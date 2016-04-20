@@ -67,10 +67,6 @@ If you didn't change the location of the default machine folder when you install
 The "Create_VM" script you will need is either the "Create_VM.bat" script if you have a Windows host, or "Create_VM.bash" if you have a Mac or Linux host.
 {{site.data.alerts.end}}
 
-{{site.data.alerts.tip}}
-On Windows, you can quickly open a command prompt in the desired directory by holding down shift key and right-clicking the folder name in the Windows File Manager, then choose "Open command window here".
-{{site.data.alerts.end}}
-
 
 ### Machine Folder Location
 

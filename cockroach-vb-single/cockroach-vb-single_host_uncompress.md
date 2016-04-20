@@ -14,6 +14,7 @@ If you already have a utility installed on your host machine that will extract f
 
 
 ## Windows Hosts
+<span class="label label-info">Windows</span>
 
 We will use the [7-zip](http://www.7-zip.org/) utility as it's free and can also handle many other compression formats.
 
@@ -26,6 +27,7 @@ We will use the [7-zip](http://www.7-zip.org/) utility as it's free and can also
 
 
 ## Mac Hosts
+<span class="label label-success">Mac</span>
 
 We will use [The Unachiver](http://unarchiver.c3.cx/unarchiver) utility as it's free and can handle many more compression formats than Mac's "Archive Utility" app.
 
@@ -38,11 +40,12 @@ We will use [The Unachiver](http://unarchiver.c3.cx/unarchiver) utility as it's 
 
 
 ## Linux Hosts
+<span class="label label-warning">Linux</span>
 
 ### Coming soon.
 
 
 ## What's Next
 
-We will use the uncompress utility when we create the virtual machine. Next, the [VirtualBox](cockroach-vb-single_host_virtualbox) section shows you how to install the VirtualBox software onto your host machine.
+We'll use the uncompress utility when we create the virtual machine. Next, the [VirtualBox](cockroach-vb-single_host_virtualbox) section shows you how to install the VirtualBox software onto your host machine.
 

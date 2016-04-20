@@ -8,21 +8,26 @@ summary: "Here's what to do when you have finished using the cluster and want to
 
 ## Remove the Virtual Machine
 
-Execute the `Remove_VM` script (either `Remove_VM.bat` or `Remove_VM.bash`) in the `cockroach-vb-single` directory. This script will shutdown the virtual machine if it's running, then delete all associated entries and files.
+1. Shutdown the machine, then in the Oracle VM VirtualBox Manager GUI, highight the machine, and select `Machine ==> Remove...` from the menu.
 
+   ![Remove VM](images/Remove_VM.png)
+
+Click the `Delete all files` button to remove the machine and all associated files created by VirtualBox.
 
 ## Remove VirtualBox
 
-To remove VirtualBox, click the "Windows" icon to open the Start screen. Find the VirtualBox icon and right-click and select "Uninstall".
+1. To remove VirtualBox, click the "Windows" icon to open the Start screen. Find the VirtualBox icon and right-click and select "Uninstall".
 
 
-## Remove 7zip
+## Remove the Uncompress Utility
 
-To remove 7zip, click the "Windows" icon to open the Start screen. Find the 7zip icon and right-click and select "Uninstall".
+1. To remove 7zip, click the "Windows" icon to open the Start screen. Find the 7zip icon and right-click and select "Uninstall".
 
 
-## Remove Directories
+## Remove the cockroach-vb-single directory.
 
-Delete the `cockroach-vb-single` directory and all it's contents.
+1. Delete the `cockroach-vb-single` directory and all it's contents.
+
+That's everything!
 
 

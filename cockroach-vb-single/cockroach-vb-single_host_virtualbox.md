@@ -7,6 +7,7 @@ summary: "Install and configure VirtualBox on your host machine."
 ---
 
 ## Windows Hosts
+<span class="label label-info">Windows</span>
 
 ### Download and Install VirtualBox
 
@@ -18,6 +19,7 @@ There's no additional configuration required. You may want to change the default
 
 
 ## Mac Hosts
+<span class="label label-success">Mac</span>
 
 ### Download and Install VirtualBox
 
@@ -29,6 +31,7 @@ There's no additional configuration required. You may want to change the default
 
 
 ## Linux Hosts
+<span class="label label-warning">Linux</span>
 
 ### Download and Install VirtualBox
 

@@ -11,6 +11,7 @@ Now that you have a working virtual machine you may want to re-open this guide i
 {{site.data.alerts.end}}
 
 ## Download the CockroachDB pre-built Binary
+<span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
 
 Log into your virtual machine as the `osboxes` user (password is `osboxes.org`).
 
@@ -42,13 +43,15 @@ The pre-built binary version will probably be different to the one used in the i
    osboxes@osboxes:~$ 
    ```
 
-4. Check the `cockroach` executable is ok. Execute the `cockroach version | head -3` command to check it's version.
+4. Check the `cockroach` executable is ok. Execute the `cockroach version` command to check it's version.
 
    ```Shell
-   osboxes@osboxes:~$ cockroach version | head -3
-   Build Vers:  go1.6
-   Build Tag:   beta-20160330
-   Build Time:  2016/03/30 14:53:35
+   osboxes@osboxes:~$ cockroach version
+   Build Tag:   beta-20160414
+   Build Time:  2016/04/14 15:15:52
+   Platform:    linux amd64
+   Go Version:  go1.6
+   C Compiler:  gcc 4.9.2
    osboxes@osboxes:~$ 
    ```
 

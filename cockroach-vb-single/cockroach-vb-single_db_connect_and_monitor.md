@@ -28,6 +28,8 @@ The `cockroach` executable contains a built-in client that enables you to connec
    root@localhost:26257> ^D
    osboxes@osboxes:~$ 
    ```
+   
+   You can also use the individual parameters like `cockroach sql --insecure --host localhost --port 26257 --user root`. See `cockroach sql --help` for more info.
 
 ## Start the Admin GUI
 

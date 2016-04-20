@@ -7,7 +7,7 @@ type: first_page
 homepage: true
 ---
 
-## What is CockroachDB?
+## What's CockroachDB?
 
 (taken from the [CockroachDB FAQ](https://www.cockroachlabs.com/docs/frequently-asked-questions.html))
 
@@ -18,7 +18,7 @@ It **scales** horizontally; **survives** disk, machine, rack, and even datacente
 CockroachDB is inspired by Google's [Spanner](http://research.google.com/archive/spanner.html) and [F1](http://research.google.com/pubs/pub38125.html) technologies, and it’s completely [open source](https://github.com/cockroachdb/cockroach).
 
 
-## What is this Guide?
+## What's this Guide For?
 
 This guide explains how to set up a demonstration/evaluation CockroachDB cluster using a single VirtualBox virtual machine to run 3 CockroachDB database nodes.
 
@@ -26,10 +26,10 @@ It uses a pre-built VirtualBox image as a starting point to create the guest mac
 
 ![Arch](images/new_vb_arch_single_50pc.png)
 
-You need to be connected to the Internet to build this machine as it requires you to download and install some things but you don't need to be online to run the CockroachDB cluster.
+You'll need to be connected to the Internet to build this machine as it requires you to download and install some things but you don't need to be online to run the CockroachDB cluster.
 
 
-## What you will Need
+## What you'll Need
 
 The detailed requirements are in the guide but in summary you will need:
 

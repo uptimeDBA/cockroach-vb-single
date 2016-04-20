@@ -11,11 +11,11 @@ summary: "These are the things you need to setup and check on your host machine 
 
 ### Operating System
 
-You will need a version of Windows, Mac OS X, or Linux that runs [VirtualBox](https://www.virtualbox.org). 
+You'll need a version of Windows, Mac OS X, or Linux that runs [VirtualBox](https://www.virtualbox.org). 
 
 VirtualBox is supported by various versions of Windows, Linux, and Mac OS X. Please check the version compatibility of these products against the version of your host operating system.
 
-The virtual machine in this guide was constructed on a 64bit Windows 10 Professional host machine with an Intel i7-4770 CPU and 32Gb of memory. It's also been tested on a Mac 10.11.4 "El Capitan". Other versions of Windows and Mac OS X or Linux have not been tested yet.
+The virtual machine in this guide was constructed on a 64bit Windows 10 Professional host machine with an Intel i7-4770 CPU and 32Gb of memory. It's also been tested on a Mac with 10.11.4 "El Capitan" and 8 Gb of memory. Other versions of Windows and Mac OS X or Linux have not been tested yet.
 
 
 ### Memory
@@ -25,14 +25,19 @@ The required minimum host machine memory is **3Gb** with the recommended being *
 
 ### Disk
 
-The virtual machine as a single **100Gb**, dynamically allocated VDI type disk. Because the disk is dynamically allocated, the actual disk size of the installed machine is around **4Gb** when started. The amount of data loaded into the database nodes will determine the final disk space used, up to 100Gb.
+The virtual machine as a single **100Gb**, dynamically allocated VDI type disk. Because the disk is dynamically allocated, the actual space used by the disk of the installed machine is around **4Gb** when started. The amount of data loaded into the database nodes will determine the final disk space used, up to 100Gb.
 
 The suggested minimum host machine disk space requirement is **6Gb**. The theoretical maximum host machine disk space requirement is approximately **110Gb**.
 
-{{site.data.alerts.important}}
-The VirtualBox machines that get created will reside in the VirtualBox Default Machine Folder. By default this is called "VirtualBox VMs" and on Windows is set to %HOMEDRIVE%%HOMEPATH% which is usually C:\Users\username\. On Mac OS X, it's /Users/username, and on Linux it's /home/username. 
-This is where most of the disk space will be consumed. If you want to change the location of the virtual machine, you can change the Default Machine Folder under File-->Preferences-->General in VirtualBox and the value of the MACHINE_FOLDER variable in the Create_VM script.
-{{site.data.alerts.end}}
+The VirtualBox machines that gets created will reside in the **VirtualBox Default Machine Folder**. By default this is called `VirtualBox VMs`. 
+
+- On Windows this is set to `%USERPROFILE%\VirtualBox VMs` which is usually `C:\Users\<username>\VirtualBox VMs`. 
+
+- On Mac OS X, it's `/Users/<username>`.
+
+- On Linux it's `/home/<username>`. 
+
+This is where most of the disk space will be consumed. If you want to change the location of the virtual machine, you can change the Default Machine Folder under File-->Preferences-->General in VirtualBox and the value of the `MACHINE_FOLDER` variable in the `Create_VM` script.
 
 
 ## Software Requirements
@@ -51,10 +56,11 @@ The following pages will instruct you how to install and setup this software.
 
 ## The cockroach-vb-single Directory
 
-This is the directory that gets created in the next step when you download and extract the configuration files. You can put this directory anywhere you want but the suggested places are the `C:\Users\<username>\Documents` on Windows, the `Documents` folder on Mac, or the `$HOME` dircetory on Linux.
+This is the directory that gets created in the next step when you download and extract the configuration files. You can put this directory anywhere you want but the suggested places are the `C:\Users\<username>\Documents` on Windows, the `Documents` folder on Mac, or the `$HOME` directory on Linux.
 
 
 ## Download the Configuration Files
+<span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
 
 A few small configuration files have been created to save you some typing. They can be downloaded in a zip file which when unzipped will create a directory with the files.
 

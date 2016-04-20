@@ -6,6 +6,8 @@ last_updated:
 summary: "How to startup and connect to a CockroachDB cluster."
 ---
 
+Three nodes are the minimum number to form a redundant cluster. The data is replicated over the three nodes such that if one node fails there will still be enough nodes left to maintain replicated copies of the data.
+
 ## Startup
 
 There are a couple of ways to connect to a CockroachDB cluster. We will be using the easiest method which is called **insecure** because it doesn't use SSL certificates to connect. Please see the CockroachDB documentation for other ways to connect.
@@ -69,6 +71,12 @@ The `--port` parameter tells cockroach which port to use for it's inter-node com
 The `--http-port` parameter tells cockroach which port to start the node's Admin interface on.
 
 The `--join` parameter tells cockroach the host and port of a node in the cluster it is to become a member of.
+
+
+## About the Cluster Node Ports
+
+In a typical configuration, each cluster node will run on it's own physical or virtual machine, or inside it's own container. When this is the case, the default port numbers of **8080** for the Admin port and **26257** for the internode communication port should work ok. However, we are running all cluster nodes on the same machine so we need to assign different ports to each cluster node so they don't clash.
+
 
 ## Logging
 

@@ -11,7 +11,7 @@ summary: "All the little things you need to know before you get going."
 This guide is intended for people wishing to quickly setup their own CockroachDB cluster to evaluate it's functionality and learn how it works. It's aimed at Architects, Database Administrators, DevOps, etc and assumes a proficient level of computing skills but previous experience with VirtualBox is not required.
 
 {{site.data.alerts.important}}
-It is not a guide for setting up a development environment for hacking the code or for running performance tests. Should you wish to contribute to the Cockroach open source project, take a look at the Contribute to CockroachDB page on the CockroachLabs website.
+It's not a guide for setting up a development environment for hacking the code or for running performance tests. Should you wish to contribute to the Cockroach open source project, take a look at the Contribute to CockroachDB page on the CockroachLabs website.
 {{site.data.alerts.end}}
 
 {{site.data.alerts.warning}}
@@ -54,10 +54,10 @@ The cluster is designed for functional testing, evaluation and experimentation. 
 
 This quick start guide is designed to get a minimal CockroachDB cluster up and running with minimal configuration and changes to the host machine.
 
-It was written using a Windows 10 host machine but the instructions should easily be adapted for a Mac or Linux host and should work just as well. Some of the differences have been noted where applicable but using Mac OS/X or Linux as a host has not been tested. Instructions for Mac and Linux hosts will be coming soon.
+This guide was written using a Windows 10 host machine but instructions for Mac and Linux hosts have been included.
 
 
 ## What's Next
 
-The [Overview](cockroach-vb-single_overview) section will give you a high level description of what you are building and how you will build it.
+The [Overview](cockroach-vb-single_overview) section will give you a high level description of what you're building and how you will build it.
 

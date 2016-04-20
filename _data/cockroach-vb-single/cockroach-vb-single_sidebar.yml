@@ -115,14 +115,6 @@ entries:
     version: all
     output: web, pdf
     items:
-    - title: Overview
-      url: /cockroach-vb-single/cockroach-vb-single_db_overview.html
-      audience: student, instructor
-      platform: all
-      product: CockroachDB
-      version: all
-      output: web, pdf
-
     - title: Install
       url: /cockroach-vb-single/cockroach-vb-single_db_install.html
       audience: student, instructor
@@ -155,16 +147,8 @@ entries:
     version: all
     output: web, pdf
     items:
-    - title: Shutdown Database
+    - title: Shutdown Database and VM
       url: /cockroach-vb-single/cockroach-vb-single_db_shutdown.html
-      audience: student, instructor
-      platform: all
-      product: CockroachDB
-      version: all
-      output: web, pdf
-      
-    - title: Shutdown VM
-      url: /cockroach-vb-single/cockroach-vb-single_vm_shutdown.html
       audience: student, instructor
       platform: all
       product: CockroachDB
