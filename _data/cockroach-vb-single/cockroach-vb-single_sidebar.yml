@@ -147,7 +147,7 @@ entries:
     version: all
     output: web, pdf
     items:
-    - title: Shutdown Database and VM
+    - title: Admin Tasks
       url: /cockroach-vb-single/cockroach-vb-single_db_shutdown.html
       audience: student, instructor
       platform: all

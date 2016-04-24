@@ -1,9 +1,9 @@
 ---
-title: Shutdown the Database and the Virtual Machine
+title: Admin Tasks
 tags: 
 keywords: CockroachDB, install, guide
 last_updated: 
-summary: "Here's what to do when you want to shutdown a database node or shutdown the virtual machine but keep it for another time."
+summary: "Here's what to do when you want to shutdown a database node or shutdown the virtual machine but keep it for another time and to update the version of CockroachDB."
 ---
 
 ## Database Node Shutdown
@@ -40,6 +40,18 @@ The Admin UI is served from the same cockroach executable that runs the database
 The CockroachDB virtual machine can be administered from the Oracle VM VirtualBox Manager GUI but the easiest way is to execute the `sudo shutdown -h now` command from a terminal.
 
 The cockroachDB instances are not automatically shutdown when you shutdown the virtual machine so make sure they are shut down first.
+
+
+## Update CockroachDB
+
+CockroachDB is moving very fast. Updating the version of CockroachDB after you've built your cluster is easy because all the cluster nodes are on a single machine.
+
+1. Shutdown all the database nodes.
+
+2. Follow the instructions on the Install the CockroachDB Software page, including downloading, untaring, and copying the binary to the `/usr/local/bin` directory (and overwriting the pervious binary).
+
+3. Startup all the database nodes.
+
 
 
 

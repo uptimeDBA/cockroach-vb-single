@@ -16,6 +16,7 @@ disqus_shortname: cockroach-vb-single
 #baseurl: /cockroach-vb-single
 baseurl: /
 google_analytics: "UA-75179410-2"
+auto: false
 # variables
 
 
