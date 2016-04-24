@@ -85,4 +85,4 @@ root@26257> SELECT * FROM accounts;
 
 or [Learn CockroachDB SQL](https://www.cockroachlabs.com/docs/learn-cockroachdb-sql.html).
 
-When you have finished you can either shut the [Database](/cockroach-vb-single/cockroach-vb-single_db_shutdown) and [Machine](cockroach-vb-single_vm_shutdown) down for next time or [Uninstall](cockroach-vb-single_uninstall) them completely.
+When you have finished you can either shut the [Database](cockroach-vb-single_db_shutdown) and [Machine](cockroach-vb-single_db_shutdown) down for next time or [Uninstall](cockroach-vb-single_uninstall) them completely.
