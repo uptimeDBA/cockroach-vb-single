@@ -43,7 +43,7 @@ The pre-built binary version will probably be different to the one used in the i
    osboxes@osboxes:~$ 
    ```
 
-4. Check the `cockroach` executable is ok. Execute the `cockroach version` command to check it's version.
+4. Check the `cockroach` executable is ok. Execute the `cockroach version` command to check its version.
 
    ```Shell
    osboxes@osboxes:~$ cockroach version

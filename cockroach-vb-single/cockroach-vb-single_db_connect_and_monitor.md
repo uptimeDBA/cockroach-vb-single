@@ -8,7 +8,7 @@ summary: "Use the built-in client functionality to connect to the cluster and st
 
 ## Connect to the Database
 
-The `cockroach` executable contains a built-in client that enables you to connect to a cockroachDB cluster and execute SQL statements.
+The `cockroach` executable contains a [built-in client](https://www.cockroachlabs.com/docs/use-the-built-in-sql-client.html) that enables you to connect to a cockroachDB cluster and execute SQL statements.
 
 1. On the virtual machine, using a terminal, as the `osboxes` user, logon to the cluster using the `cockroach sql --url postgresql://root@localhost:26257?sslmode=disable` command.
 
@@ -42,7 +42,7 @@ When you start each database instance, it displays the URL of the Admin UI you c
    ![Monitor](images/Monitor.png)
 
 
-You can also inspect the cluster status from the command line by executing the `cockroach node status` command.
+You can also inspect the cluster status from the command line by executing the `cockroach node status` command. Refer to the [View Node Details](https://www.cockroachlabs.com/docs/view-node-details.html) in the documentation for more information.
 
 ```Shell
 osboxes@osboxes:~$ cockroach node status

@@ -7,7 +7,7 @@ summary: "Downloading a Linux ISO file and building a machine from scratch can t
 ---
 
 {{site.data.alerts.important}}
-There are no instructions on this page, it's just information to help you understand the constrcution of the virtual machine should you wish to modify or make your own. Impatient people can skip to the next section but the information here will help you understand how this setup works.
+There's no instructions on this page, it's just information to help you understand the construction of the virtual machine should you wish to modify or make your own. Impatient people can skip to the next section but the information here will help you understand how this setup works.
 {{site.data.alerts.end}}
 
 CockroachDB can run on many different Linux distributions. We'll be downloading a pre-built VirtualBox 64 bit image based on Ubuntu called [Linux Lite](https://www.linuxliteos.com/) from [osboxes](http://www.osboxes.org/). There's no special reason we are using Linux Lite as our operating system. It was chosen because osboxes.org had a pre-built VirtualBox image that could be downloaded easily and it was one of the smaller available at around 760Mb compressed.

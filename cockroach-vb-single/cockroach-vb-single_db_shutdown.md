@@ -28,8 +28,6 @@ The Admin UI will still show 3 nodes in the cluster as we have just shut one dow
 
 ![Shutdown Node](images/Shutdown_Node.png)
 
-If you want to completely remove a node from the cluster, use the `cockroach exterminate` command. This will shut down the node, destroy all data held by the node, and remove the node from the cluster.
-
 {{site.data.alerts.warning}}
 The Admin UI is served from the same cockroach executable that runs the database node. If you shutdown the database node that your Admin UI is connected to, it will stop working. You will need to reconnect to another operational node.
 {{site.data.alerts.end}}
@@ -48,11 +46,13 @@ CockroachDB is moving very fast. Updating the version of CockroachDB after you'v
 
 1. Shutdown all the database nodes.
 
-2. Follow the instructions on the Install the CockroachDB Software page, including downloading, untaring, and copying the binary to the `/usr/local/bin` directory (and overwriting the pervious binary).
+2. Follow the instructions on the [Install the CockroachDB Software](cockroach-vb-single_db_install) page, including downloading, untaring, and copying the binary to the `/usr/local/bin` directory (and overwriting the previous binary).
 
 3. Startup all the database nodes.
 
-
+{{site.data.alerts.tip}}
+Each new version comes with its own set of release notes covering things like new features, bug fixes, backwards-incompatible changes, performance improvements, etc. Please check the notes in the Release Notes section of the online documentation for more information.
+{{site.data.alerts.end}}
 
 
 

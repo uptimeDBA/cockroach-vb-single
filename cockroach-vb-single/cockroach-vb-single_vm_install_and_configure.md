@@ -24,7 +24,7 @@ The steps are:
 **LinuxLite_*\<version>*-64bit.7z**.
 
 {{site.data.alerts.note}}
-Even if you are using a 32 bit host operating system, you can still download and install a 64 bit VirtualBox guest.
+Even if you are using a 32 bit host operating system, you can still download and install a 64 bit VirtualBox guest. The download is about 750Mb so it may take a few minutes depending on your internet connection.
 {{site.data.alerts.end}}
 
 
@@ -101,7 +101,7 @@ The default virtual memory is **2Gb**. This should be enough to start 3 Cockroac
    VboxManage modifyvm "CockroachDB" --memory 2048 --vram 128
    ```
 
-### CPU's
+### CPUs
 <span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
 
 The default number of virtual CPUs in the create script is 2. This should be enough to run 3 CockroachDB nodes but more is preferable. The recommended number is up to half of the number of physical CPUs, including hyper-threading.
@@ -134,7 +134,7 @@ The `Create_VM` script will:
 
    ![Create VM](images/Create_VM.png)
    
-   The script will pause at the end so you can review it's output before hitting return to close the window.
+   The script will pause at the end so you can review its output before hitting return to close the window.
 
 
 ### On Mac
@@ -176,4 +176,4 @@ Now that you have a working virtual machine you may want to re-open this guide i
 
 ## What's Next
 
-Download and install the CockroachDB software and start the [Database Cluster](cockroach-vb-single_db_overview).
+Download and install the CockroachDB software and start the [Database Cluster](cockroach-vb-single_db_install).

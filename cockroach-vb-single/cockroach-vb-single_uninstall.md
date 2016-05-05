@@ -26,8 +26,4 @@ Click the `Delete all files` button to remove the machine and all associated fil
 
 ## Remove the cockroach-vb-single directory.
 
-1. Delete the `cockroach-vb-single` directory and all it's contents.
-
-That's everything!
-
-
+1. Delete the `cockroach-vb-single` directory and all its contents.
