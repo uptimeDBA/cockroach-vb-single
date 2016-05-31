@@ -45,6 +45,9 @@ The links in the diagrams still reference the `sql-grammar.html` page as I didn'
 
 ### ALTER DATABASE
 
+**CHANGED:**
+This diagram hasn't changed but I've renamed it to `ALTER DATABASE` from `RENAME DATABASE`. There is no `RENAME DATABASE` SQL statement, it's an option of `ALTER DATABASE`. 
+
 **alter_database ::=**
 {% include sql/diagrams/alter_database.html %}
 
@@ -54,82 +57,101 @@ The only option at present is `RENAME`. I moved the current `RENAME DATABASE` co
 
 ### ALTER INDEX
 
+**NEW:** We don't have an document entry for this statement.
+
 **alter_index ::=**
 {% include sql/diagrams/alter_index.html %}
 
 
 ### ALTER TABLE
 
+**ORIGINAL:**
+
 **alter_table ::=**
 {% include sql/diagrams/alter_table.html %}
 
 <br><br>
+**NEW:** Removed `REFERENCES` clause. Added to `CREATE TABLE` as well.
+
 **col_qual_list ::=**
 {% include sql/diagrams/col_qual_list.html %}
 
 <br><br>
+**NEW:** Added to `CREATE TABLE` as well.
+
 **table_constraint ::=**
 {% include sql/diagrams/table_constraint.html %}
 
 
 ### BEGIN TRANSACTION
 
+**CHANGED:**
+Added `START TRANSACTION` as an alias. Expanded `user_priority`.
+
 **begin_transaction ::=**
 {% include sql/diagrams/begin.html %}
 
 <br><br>
-I included `START TRANSACTION` as an alias.
+**NEW:** Added `iso_level`.
 
-<br><br>
 **iso_level ::=**
 {% include sql/diagrams/iso_level.html %}
 
 
 ### COMMIT TRANSACTION
 
+**CHANGED:**
+Added `END` as an alias.
+
 **commit_transaction ::=**
 {% include sql/diagrams/commit.html %}
-
-<br><br>
-I included `END TRANSACTION` as an alias.
 
 
 ### CREATE DATABSE
 
+**CHANGED:**
+Expanded the `opt_encoding_clause`. Replaced `SCONST` with a hardcoded list of available encoding options.
+
 **create_database ::=**
 {% include sql/diagrams/create_database.html %}
 
-<br><br>
-Nice if we could have a list of valid encodings (currently only [**UFT8** | **UTF-8** | **UNICODE**]) instead of `SCONST`.
-
 
 ### CREATE INDEX
+
+**ORIGINAL:**
 
 **create_index ::=**
 {% include sql/diagrams/create_index.html %}
 
 <br><br>
+**NEW:** Added `opt_storing` expansion as a separate diagram.
+
 **opt_storing ::=**
 {% include sql/diagrams/opt_storing.html %}
 
 
 ### CREATE TABLE
 
+**CHANGED:** Regenerated diagram now includes `family_def`. Expanded `column_def` 
+
 **create_table ::=**
 {% include sql/diagrams/create_table.html %}
 
 <br><br>
+**NEW:** Removed `REFERENCES` clause. Added to `ALTER TABLE` as well. 
+
 **col_qual_list ::=**
 {% include sql/diagrams/col_qual_list.html %}
 
 <br><br>
-Need to remove `REFERENCES` clause unless foreign keys are not far off?
+**NEW:**
 
-<br><br>
 **index_def ::=**
 {% include sql/diagrams/index_def.html %}
 
 <br><br>
+**NEW:**
+
 **family_def ::=**
 {% include sql/diagrams/family_def.html %}
 
@@ -137,11 +159,15 @@ Need to remove `REFERENCES` clause unless foreign keys are not far off?
 This is a new clause that popped up a few days ago. Not sure what it is.
 
 <br><br>
+**NEW:** This should be included on the Data Definition page along with the `col_qual_list` diagram.
+
 **table_constraint ::=**
 {% include sql/diagrams/table_constraint.html %}
 
 
 ### DELETE
+
+**ORIGINAL:**
 
 **delete ::=**
 {% include sql/diagrams/delete.html %}
@@ -149,17 +175,25 @@ This is a new clause that popped up a few days ago. Not sure what it is.
 
 ### DROP DATABASE
 
+**ORIGINAL:**
+
 **drop_database ::=**
 {% include sql/diagrams/drop_database.html %}
 
 
 ### DROP INDEX
 
+**CHANGED:** Expanded `table_name_with_index_list`.
+
+I'm not sure if `CASCADE` should be there for now.
+
 **drop_index ::=**
 {% include sql/diagrams/drop_index.html %}
 
 
 ### DROP TABLE
+
+**CHANGED:** Expanded `opt_drop_behaviour` and removed the `CASCADE` option.
 
 **drop_table ::=**
 {% include sql/diagrams/drop_table.html %}
@@ -191,11 +225,15 @@ I removed the `CASCADE` option as it relates to foreign keys and to see how easy
 
 ### EXPLAIN
 
+**ORIGINAL:**
+
 **explain ::=**
 {% include sql/diagrams/explain.html %}
 
 
 ### GRANT
+
+**ORIGINAL:**
 
 **grant ::=**
 {% include sql/diagrams/grant.html %}
@@ -203,15 +241,29 @@ I removed the `CASCADE` option as it relates to foreign keys and to see how easy
 
 ### INSERT
 
+**ORIGINAL:**
+
 **insert ::=**
 {% include sql/diagrams/insert.html %}
 
 <br><br>
+**NEW:** 
+
 **on_conflict ::=**
 {% include sql/diagrams/on_conflict.html %}
 
 
+### RELEASE SAVEPOINT
+
+**ORIGINAL:**
+
+**release_savepoint ::=**
+{% include sql/diagrams/release_savepoint.html %}
+
+
 ### REVOKE
+
+**ORIGINAL:**
 
 **revoke ::=**
 {% include sql/diagrams/revoke.html %}
@@ -219,11 +271,15 @@ I removed the `CASCADE` option as it relates to foreign keys and to see how easy
 
 ### ROLLBACK
 
+**CHANGED:** Expanded `opt_to_savepoint`
+
 **rollback_transaction ::=**
 {% include sql/diagrams/rollback.html %}
 
 
 ### SAVEPOINT
+
+**NEW:** This SQL statement is not documented. 
 
 **savepoint ::=**
 {% include sql/diagrams/savepoint.html %}
@@ -234,6 +290,8 @@ This grammar seems odd. Is `SAVEPOINT SAVEPOINT <name>` intended?
 
 ### SELECT
 
+**ORIGINAL:**
+
 **select ::=**
 {% include sql/diagrams/select.html %}
 
@@ -242,9 +300,9 @@ I haven't touched this. Not brave enough.
 
 ### SET
 
-The `SET` grammar seems messy. (Something to do with the `set_rest` and `set_rest_more` definitions doesn't look clean.)
+**ORIGINAL:** The `SET` grammar seems messy. (Something to do with the `set_rest` and `set_rest_more` definitions doesn't look clean.)
 
-Most of these `SET` diagrams are all over the place. A work in progress.
+I can't get nice clean diagrams from the grammar so I won't touch `SET` for now. Please ignore all `SET` diagrams here.
 
 `SHOW` is much cleaner and easier to parse. Any chance of refactoring the `SET` grammar to match (or be similar to) `SHOW`?
 
@@ -277,6 +335,8 @@ Most of these `SET` diagrams are all over the place. A work in progress.
 
 ### SHOW ALL
 
+**NEW:** This SQL statement is not documented. 
+
 **show_all ::=**
 {% include sql/diagrams/show_all.html %}
 
@@ -286,11 +346,15 @@ Most of these `SET` diagrams are all over the place. A work in progress.
 
 ### SHOW IDENT
 
+**NEW:** This SQL statement is not documented. 
+
 **show_ident ::=**
 {% include sql/diagrams/show_ident.html %}
 
 
 ### SHOW DATABASE
+
+**NEW:** This SQL statement is not documented. 
 
 **show_database ::=**
 {% include sql/diagrams/show_database.html %}
@@ -298,17 +362,23 @@ Most of these `SET` diagrams are all over the place. A work in progress.
 
 ### SHOW DATABASES
 
+**ORIGINAL:**
+
 **show_databases ::=**
 {% include sql/diagrams/show_databases.html %}
 
 
 ### SHOW COLUMNS
 
+**ORIGINAL:**
+
 **show_columns ::=**
 {% include sql/diagrams/show_columns.html %}
 
 
 ### SHOW CREATE
+
+**NEW:** This SQL statement is not documented. 
 
 **show_create ::=**
 {% include sql/diagrams/show_create.html %}
@@ -319,22 +389,25 @@ The only option at present is `TABLE`. I moved the `SHOW CREATE TABLE` command t
 
 ### SHOW GRANTS
 
+**ORIGINAL:**
+
 **show_grants ::=**
 {% include sql/diagrams/show_grants.html %}
 
 
 ### SHOW INDEX
 
+**CHANGED:** Merged `KEYS` as an alias and added `INDEXES` as an alias.
+
 **show_index ::=**
 {% include sql/diagrams/show_index.html %}
-
-<br><br>
-I merged `KEYS` as an alias and added `INDEXES` as an alias.
 
 Just to see how it would look as a more meaningful description, I replaced *var_name* with *table_name*.  
 
 
 ### SHOW TABLES
+
+**ORIGINAL:**
 
 **show_tables ::=**
 {% include sql/diagrams/show_tables.html %}
@@ -342,17 +415,31 @@ Just to see how it would look as a more meaningful description, I replaced *var_
 
 ### SHOW TIME ZONE
 
+**ORIGINAL:**
+
 **show_time_zone ::=**
 {% include sql/diagrams/show_time_zone.html %}
 
 
 ### SHOW TRANSACTION
 
+**ORIGINAL:**
+
 **show_transaction ::=**
 {% include sql/diagrams/show_transaction.html %}
 
 
+### TRUNCATE
+
+**ORIGINAL:** Should probably expand `opt_drop_behavior` at some stage.
+
+**truncate ::=**
+{% include sql/diagrams/truncate.html %}
+
+
 ### UPDATE
+
+**ORIGINAL:**
 
 **update ::=**
 {% include sql/diagrams/update.html %}
@@ -360,8 +447,18 @@ Just to see how it would look as a more meaningful description, I replaced *var_
 
 ### UPSERT
 
+**ORIGINAL:**
+
 **upsert ::=**
 {% include sql/diagrams/upsert.html %}
+
+
+### VALUES
+
+**ORIGINAL:**
+
+**values ::=**
+{% include sql/diagrams/values.html %}
 
 
 
